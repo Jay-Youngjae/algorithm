@@ -1,6 +1,6 @@
 from collections import deque
 import sys
-si = sys.stdin.readline
+input = sys.stdin.readline
 
 # DFS 함수 정의
 def dfs(graph, v, visited):
@@ -23,14 +23,14 @@ def bfs(graph, v, visited):
                 visited[i] = True
 
 # 입력 받기
-n, m, v = map(int, si().split())  # 노드 수, 간선 수, 시작 정점
+n, m, v = map(int, input().split())  # 노드 수, 간선 수, 시작 정점
 
 # 그래프 초기화
 graph = [[] for _ in range(n+1)]
 
 # 간선 정보 입력받기
 for _ in range(m):
-    u, w = map(int, si().split())
+    u, w = map(int, input().split())
     graph[u].append(w)
     graph[w].append(u)  # 양방향 간선
 
@@ -42,3 +42,4 @@ print()  # 줄 바꿈
 # BFS 탐색
 visited = [False] * (n+1)
 bfs(graph, v, visited)
+
