@@ -15,3 +15,4 @@ def sugar(N, idx, x, y):
 
 N = int(input())
 print(sugar(N, 0, 3, 5))
+#생각해보니 그냥 3이랑 5로 나누면 되겟다
