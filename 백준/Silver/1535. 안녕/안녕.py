@@ -1,7 +1,6 @@
 import sys
 from functools import lru_cache
 
-sys.setrecursionlimit(10**6)
 input = sys.stdin.readline
 
 @lru_cache(maxsize=None)
