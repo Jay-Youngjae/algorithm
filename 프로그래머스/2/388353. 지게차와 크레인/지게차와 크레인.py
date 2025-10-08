@@ -81,14 +81,3 @@ def solution(storage, requests):
             removed = use_crane(storage, r[0])
             cnt -= removed
     return cnt
-
-"""
-일단 요청이 들어왔는데 하나짜리 요청이다!
-그럼 storage[0][0~m], storage[0~n][0], storage[n][0~m], storage[0~n][m]에 해당하는 글자를 제거한다
-
-두개짜리 요청이다! -> 해당 글자를 전부 제거한다
-
-여기서 문제는 한번 제거한 이후 바깥에 해당하는 글자만 어떻게 깔끔하게 제거할것인가
-그럼 비어있는 공간에 임의의 문자 '0'을 넣는건 어떨까
-그래서 if storage == '0'이라면 i+1 을 대입시키는거지
-"""
